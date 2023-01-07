@@ -5,7 +5,6 @@ const clearButton = document.querySelector(".clear");
 const pick = document.querySelector("#input-color");
 const slider = document.querySelector("#slider");
 const hex = "0123456789abcdef";
-console.log(sketchpad, color, colorButtons, clearButton, pick, slider, hex);
 
 function createGrid(num) {
   sketchpad.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
