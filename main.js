@@ -47,7 +47,16 @@ const grids = sketchpad.querySelectorAll("div");
     grid.style.backgroundColor = '#efefef'
   );
 }
+function changeSize(){
+    let grids = sketchpad.querySelectorAll('div');
+    let sizeInfo = document.querySelector('.slider-container>p')
+    let size = slider.value
+    grids.forEach((grid)=>grid.remove())
+    createGrid(size)
+    sizeInfo.textContent = `Grid Size: ${size} x ${size}`
+}
 
 colorButtons.forEach(btn=>btn.addEventListener('click', changeColor))
 pick.addEventListener('input', pickColor)
 clearButton.addEventListener('click', clearGrids)
+slider.addEventListener('input', changeSize)
