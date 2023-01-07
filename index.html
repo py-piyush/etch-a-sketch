@@ -14,11 +14,11 @@
     <main>
       <div class="container">
         <div class="btn-container">
-          <button class="btn">Black</button>
-          <button class="btn">Rainbow</button>
-          <button class="btn">Eraser</button>
-          <button class="btn">Clear</button>
-          <button class="btn"><input type="color" name="color" id="input-color" value="#000"> Pick</button>
+          <button class="btn color" data-color="black">Black</button>
+          <button class="btn color" data-color="rainbow">Rainbow</button>
+          <button class="btn color" data-color="#efefef">Eraser</button>
+          <button class="btn clear">Clear</button>
+          <button class="btn color"><input type="color" name="color" id="input-color" value="#000000"> Pick</button>
         </div>
         <div class="sketch-pad">
             <div class="grid-item">1</div>
@@ -32,5 +32,6 @@
         </div>
       </div>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
